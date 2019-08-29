@@ -14,7 +14,7 @@ pub fn gen_perspective(fov: f32, far: f32, near: f32, aspect_ratio: f32) -> [[f3
 //first person Camera
 /// rotation[0] rotation around y-Axis (x-z-Plane)
 /// rotation[1] rotation around x-Axis (y-z-Plane)
-#[derive(Debug)]
+#[derive(Debug, Default)]
 pub struct Camera {
     pub position: [f32; 3],
     pub rotation: [f32; 2],
